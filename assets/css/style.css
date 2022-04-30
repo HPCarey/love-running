@@ -13,8 +13,7 @@ body {
 }
 
 /* headings and logo */
-h1,
-h2 {
+h1, h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -27,13 +26,14 @@ h2 {
     margin-left: 30px;
 }
 
+/* navigation links */
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
 }
 
-#menu,
-#logo {
+#menu, #logo {
     line-height: 75px;
 }
 
@@ -67,8 +67,7 @@ h2 {
     position: relative;
 }
 
-#cover-text,
-#cover-text h2 {
+#cover-text, #cover-text h2 {
     color: #fff;
 }
 
@@ -85,11 +84,11 @@ h2 {
 
 /* creates the level of zoom for hero image */
 @keyframes hero-zoom {
-    from {
+    from{
         transform: scale(1);
     }
 
-    to {
+    to{
         transform: scale(1.1);
     }
 }
@@ -227,7 +226,7 @@ footer {
     text-align: center;
 }
 
-.social-networks>li {
+.social-networks > li {
     display: inline;
 }
 
@@ -247,11 +246,11 @@ footer {
     column-gap: 0;
 }
 
-#photos>img {
+#photos > img {
     width: 100%;
 }
 
-/* media queries */
+/* Media queries */
 
 /* For larger to medium screen size from 1200px wide and down */
 
@@ -263,7 +262,7 @@ footer {
     }
 
     #welcome {
-        padding: 30px;
+        padding: 30px 0;
         margin: 0;
     }
     #left-about, #right-about {
@@ -286,12 +285,12 @@ footer {
         padding: 0;
     }
     
-    hr{
+    hr {
         display: none;
     }
 }
 
-/* for medium screen sizes from 950px wide and down */
+/* For medium screen sizes from 950px wide and down */
 
 @media screen and (max-width: 950px) {
     #menu {
@@ -332,5 +331,5 @@ footer {
 
 @media screen and (max-width: 800px) {
     #photos {
-        column-count: 2;
+        column-count: 2;}
 }
